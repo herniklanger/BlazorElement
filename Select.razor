@@ -1,0 +1,48 @@
+﻿@typeparam T
+<select class="@Class" @bind="value">
+    @if (Value == null)
+    {
+        <option selected disabled hidden>none</option>
+    }
+    @for (int i = 0; i < Collection.Count<T>(); i++)
+    {
+        <option value="@i">@GetValue(Collection[i]).ToString()</option>
+    }
+</select>
+
+@code{
+    private int valueIndex;
+    private int value { get { return valueIndex; }
+        set
+        {
+            valueIndex = value;
+            Value = Collection.ElementAt(value);
+            ValueChanged.InvokeAsync(Value);
+            OnTChnaged?.Invoke(Value);
+        }
+    }
+    [Parameter]
+    public string Class { get; set; }
+    [Parameter]
+    public T Value { get; set; }
+    [Parameter]
+    public List<T> Collection { get; set; }
+    [Parameter]
+    public EventCallback<T> ValueChanged { get; set; }
+    [Parameter]
+    public Action<T> OnTChnaged { get; set; }
+    [Parameter]
+    public Func<T, string> GetValue { get; set; } = DefaultGetValue;
+    protected override async Task OnInitializedAsync()
+    {
+        if(Value != null)
+        {
+            value = Collection.IndexOf(Value);
+        }
+    }
+
+    private static string DefaultGetValue<T>(T value)
+    {
+        return string.Concat(value.ToString().Select(x => Char.IsUpper(x) ? " " + x : x.ToString())).TrimStart(' ');
+    }
+}

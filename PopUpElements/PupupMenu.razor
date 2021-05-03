@@ -1,0 +1,9 @@
+﻿@if (Data.RenderFreagment != null)
+{
+    <div class="position-absolute w-100 h-100" style="background-color: #64646464;z-index: 500;">
+        <div class="position-fixed bg-white border border-primary @Data.Class @(Data.DisableMainClass ? Class : "")" style="z-index: 500; padding: 20px;top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50vmin; height: 75vmin; ">
+            <button class="btn btn-outline-danger border-0 float-right" @onclick="()=> Data.RenderFreagment = null"><span class="oi oi-x"></span></button>
+            @Fragment
+        </div>
+    </div>
+}
