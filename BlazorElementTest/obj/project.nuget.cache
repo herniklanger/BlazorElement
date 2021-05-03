@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OTnNMopc01FUL5eFct4h9IKHEKDm7S8GSeyr+dugm8Dgo0MCIZriZrcDvYLMY/rcI6I2je70oFOGmtuM890eAQ==",
+  "dgSpecHash": "E3m6hlR7MQTaLO+yIfMcNxvO8EZZmA7bvTipVvOgPlpiR0S70rpRTvowLTicRhg4pwjepkDRDBtIj6ybsD2Ktg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\BlazorElement\\BlazorElementTest\\BlazorElementTest.csproj",
+  "projectFilePath": "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\ECO Laws debugging\\EksternealElements\\BlazorElementTest\\BlazorElementTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\henri\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",

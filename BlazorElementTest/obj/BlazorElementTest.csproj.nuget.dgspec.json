@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\BlazorElement\\BlazorElementTest\\BlazorElementTest.csproj": {}
+    "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\ECO Laws debugging\\EksternealElements\\BlazorElementTest\\BlazorElementTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\BlazorElement\\BlazorElementTest\\BlazorElementTest.csproj": {
+    "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\ECO Laws debugging\\EksternealElements\\BlazorElementTest\\BlazorElementTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\BlazorElement\\BlazorElementTest\\BlazorElementTest.csproj",
+        "projectUniqueName": "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\ECO Laws debugging\\EksternealElements\\BlazorElementTest\\BlazorElementTest.csproj",
         "projectName": "BlazorElementTest",
-        "projectPath": "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\BlazorElement\\BlazorElementTest\\BlazorElementTest.csproj",
+        "projectPath": "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\ECO Laws debugging\\EksternealElements\\BlazorElementTest\\BlazorElementTest.csproj",
         "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\BlazorElement\\BlazorElementTest\\obj\\",
+        "outputPath": "C:\\Users\\henri\\Desktop\\Programering\\Git\\C#\\ECO Laws debugging\\EksternealElements\\BlazorElementTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
