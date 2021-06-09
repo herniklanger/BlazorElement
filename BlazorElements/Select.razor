@@ -35,10 +35,13 @@
     public Func<T, string> GetValue { get; set; } = DefaultGetValue;
     protected override async Task OnInitializedAsync()
     {
-        if(Value != null)
+
+        valueIndex = Collection.IndexOf(Value);
+        if(valueIndex == -1)
         {
-            value = Collection.IndexOf(Value);
+            valueIndex = 0;
         }
+        StateHasChanged();
     }
 
     private static string DefaultGetValue<T>(T value)
