@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EksternealElements.Charts
 {
-    class GanttChart
+    public partial class GanttChart
     {
 
     }
