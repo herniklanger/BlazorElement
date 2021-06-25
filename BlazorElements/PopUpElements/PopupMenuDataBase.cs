@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EksternealElements.PopUpElements
+namespace EksterneElements.PopUpElements
 {
     public class PopupMenuDataBase
     {

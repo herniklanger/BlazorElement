@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-namespace EksternealElements.PopUpElements
+namespace EksterneElements.PopUpElements
 {
     public partial class PupupMenu
     {

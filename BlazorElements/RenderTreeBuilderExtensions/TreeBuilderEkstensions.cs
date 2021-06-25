@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.CompilerServices;
 using Microsoft.AspNetCore.Components.Rendering;
 
-namespace BlazorEkstensions.RenderTreeBuilderExtensions
+namespace EksterneElements.RenderTreeBuilderExtensions
 {
     public static class TreeBuilderEkstensions
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EksternealElements.Models
+namespace EksterneElements.Models
 {
     public class ImageContainer
     {

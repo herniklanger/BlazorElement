@@ -1,42 +1,25 @@
-﻿@using Models 
-<div class="container" style="overflow: hidden; height:@Height; width:@Width;">
-    <img src="Images.RoutingUrl" style="width:100%;"/>
-    @if (TopLeft != null)
-    {
-        <div class="top-left">@TopLeft</div>
-    }
-    @if (TopRight != null)
-    {
-        <div class="top-right">@TopRight</div>
-    }
-    @if (BottomLeft != null)
-    { 
-        <div class="bottom-right">@BottomLeft</div>
-    }
-    @if (BottomRight != null)
-    {
-        <div class="bottom-left">@BottomRight</div>
-    }
-    @if (Center != null)
-    {
-        <div class="centered">@Center</div>
-    }
+﻿<div class="container p-0 image" style="overflow: hidden; max-height:@Height; max-width: @Width; background-image: url('@Images[index].ImgaeLocation');">
+    <div class="image @(Images[(index + 1) % Images.Count].RoutingUrl != null ? "link":"")" @onclick="x=>navigationManager.NavigateTo(Images[(index+1)%Images.Count].RoutingUrl)" style="min-height: @Height; background-image: url('@Images[(index+1)%Images.Count].ImgaeLocation');">
+
+        @if (TopLeft != null)
+        {
+            <div class="top-left">@TopLeft(Images[index])</div>
+        }
+        @if (TopRight != null)
+        {
+            <div class="top-right">@TopRight(Images[index])</div>
+        }
+        @if (BottomLeft != null)
+        {
+            <div class="bottom-right">@BottomLeft(Images[index])</div>
+        }
+        @if (BottomRight != null)
+        {
+            <div class="bottom-left">@BottomRight(Images[index])</div>
+        }
+        @if (Center != null)
+        {
+            <div class="centered">@Center(Images[index])</div>
+        }
+    </div>
 </div>
-@code {
-    [Parameter]
-    public RenderFragment<ImageContainer> TopLeft { get; set; }
-    [Parameter]
-    public RenderFragment<ImageContainer> TopRight { get; set; }
-    [Parameter]
-    public RenderFragment<ImageContainer> BottomLeft { get; set; }
-    [Parameter]
-    public RenderFragment<ImageContainer> BottomRight { get; set; }
-    [Parameter]
-    public RenderFragment<ImageContainer> Center { get; set; }
-    [Parameter]
-    public List<ImageContainer> Images { get; set; }
-    [Parameter]
-    public string Height { get; set; }
-    [Parameter]
-    public string Width { get; set; }
-}
