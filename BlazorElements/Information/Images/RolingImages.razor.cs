@@ -11,7 +11,6 @@ namespace EksterneElements.Information.Images
 {
     public partial class RolingImages: IDisposable
     {
-        bool animaton = true;
         [Inject]
         NavigationManager navigationManager { get; set; }
         int index = 0;
@@ -41,7 +40,7 @@ namespace EksterneElements.Information.Images
         protected override void OnInitialized()
         {
             index = Images.Count()-1;
-            timer = new Timer(x => { index = (index+1)% Images.Count; StateHasChanged(); animaton = true; }, null, new TimeSpan(0, 0, 30), new TimeSpan(0, 0, 30));
+            timer = new Timer(x => { index = (index+1)% Images.Count; StateHasChanged(); }, null, new TimeSpan(0, 0, 30), new TimeSpan(0, 0, 30));
             base.OnInitialized();
         }
         protected override void OnAfterRender(bool firstRender)
