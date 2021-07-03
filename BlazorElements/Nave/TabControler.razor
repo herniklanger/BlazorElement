@@ -1,0 +1,15 @@
+﻿
+<div class="w-100 h-100">
+    <ul class="nav nav-tabs">
+        @ChildContent(this)
+    </ul>
+    <div class="h-100">
+        @TabVisulize
+    </div>
+</div>
+@code {
+    [Parameter]
+    public RenderFragment<TabControler> ChildContent { get; set; }
+    private RenderFragment tabVisulize;
+    public RenderFragment TabVisulize { get { return tabVisulize; } set { tabVisulize = value; StateHasChanged(); } }
+}

@@ -1,0 +1,7 @@
+﻿.akitve {
+    border: 1px solid lightgray;
+    border-bottom-color: white;
+}
+.akitve:hover {
+    border-bottom-color: white;
+}
