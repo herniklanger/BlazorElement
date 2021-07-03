@@ -15,7 +15,12 @@ namespace EksterneElements.PopUpElements
         [Inject]
         PopupMenuDataBase Data { get; set; }
         RenderFragment Fragment { get; set; }
-
+        public void Close()
+        {
+            Data.RenderFreagment = null;
+            Data.Height = "75vmin";
+            Data.Width = "50vmin";
+        }
         protected override void OnInitialized()
         {
             Fragment = CreatCompunent();
