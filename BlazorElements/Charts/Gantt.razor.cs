@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EksternealElements.Charts
+namespace EksterneElements.Charts
 {
     public partial class GanttChart
     {
